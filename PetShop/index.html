@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Site tec web</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <ul> <!-- li * 5 > a-->
+                <li><a class="nav-item" href="#">Home</a></li>
+                <li><a class="nav-item" href="AboutUs">About us</a></li>
+                <li><a class="nav-item" href="Costumers">Costumers</a></li>
+                <li><a class="nav-item" href="Services">Services</a></li>
+                <li><a class="nav-item" href="Blog">Blog</a></li>
+            </ul>
+            <a class="navbar-brand" href="#"><img src="img/dog-paw (1).png" alt="Puppy Paw"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="Contact">
+                <img src="img/phone-contact.png" alt="Phone">
+                <span>
+                    <a href="">(63) 99874-1943</a>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <!--   <section class="section-container">
+        <div class="container">
+            <img class="img-container" src="img/dog.png" alt="Dog">
+            <div class="content-container">
+                <h2 style="color: #22625f; font-size: 70px; font-weight: 700; text-align: center;">
+                    Enjoy Your
+                </h2>
+                <h1 style="color: #204050; font-size: 70px;">Holiday</h1>
+            </div>
+        </div>
+    </section> -->
+
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="image-container"> <!-- div criada para armazenar o botão dentro da imagem -->
+                    <img class="d-block w-100" src="img/bannerWelcome.png" alt="First slide">
+                    <button class="btnBannerWelcome"><span class="buttonSpan">Deixe seu pet nas mãos de quem entende
+                            de amor e
+                            cuidado.</span><br>
+                        <h1 style="font-size: 16px; color: #f8f0e5; font-weight: bold; padding-top: 5px; margin: 0;">
+                            Seja bem-vindo!<span><a class="saibaMais" href="AboutUs.html">Saiba mais
+                                </a></span></h1>
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="line">
+        </div>
+
+        <div class="StayTouch">
+            <h1>Some of Our Services <img src="img/paws (1).png" alt="Paws"></h1>
+        </div>
+        <div class="ourServices" id="Services">
+            <div class="containerServices">
+                <div class="card">
+                    <img class="card-img-top" src="img/Tosa.png" alt="Card image cap">
+                    <div class="card-body">
+                        <button class="btn-knowMore" href="Tosa.html">Know more</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="card-img-top" src="img/ração.png" alt="Card image cap">
+                    <div class="card-body">
+                        <button class="btn-knowMore">Know more</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="card-img-top" src="img/habilities.png" alt="Card image cap">
+                    <div class="card-body">
+                        <button class="btn-knowMore">Know more</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="image-container"> <!-- div criada para armazenar o botão dentro da imagem -->
+                        <img class="d-block w-100" src="img/dog1.png" alt="Second slide">
+                        <button class="btn-overlay"><a class="AboutMe" href="#">Know More About Me!</a></button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="image-container"> <!-- div criada para armazenar o botão dentro da imagem -->
+                        <img class="d-block w-100" src="img/dog2.png" alt="Second slide">
+                        <button class="btn-overlay"><a class="AboutMe" href="#">Know More About Me!</a></button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="image-container"> <!-- div criada para armazenar o botão dentro da imagem -->
+                        <img class="d-block w-100" src="img/dog3.png" alt="Third slide">
+                        <button class="btn-overlay"><a class="AboutMe" href="#">Know More About Me!</a></button>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div class="StayTouch">
+            <h1>Stay in Touch<img src="img/gato.png" alt="" style="width: 42px; padding: 5px;"></h1>
+        </div>
+
+        <section class="containerForm">
+            <form action="">
+                <div class="headerForm">
+                    <span class="Register">Register</span>
+                    <p>Already have an acc? <a href="Login.html">Sign in</a></p>
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput" style="margin-right: 8px;">
+                        <img src="img/pessoa.png" alt="Pessoa" style="width: 24px;"></label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Digite seu nome">
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress" style="margin-right: 8px;">
+                        <img src="img/mapas-e-bandeiras.png" alt="Endereço" style="width: 24px;"></label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputCity" style="margin-right: 8px;">City</label>
+                        <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputState" style="margin-right: 8px;">State</label>
+                        <select id="inputState" class="form-control">
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="inputZip" style="margin-right: 8px;">Zip</label>
+                        <input type="text" class="form-control" id="inputZip">
+                    </div>
+                </div>
+                <div class="form-group form-row col-md-12">
+                    <label for="inputDate" style="margin-right: 8px;">
+                        <img src="img/datas.png" alt="Data" style="width: 24px;"></label>
+                    <input class="form-control" id="date" type="date" />
+
+                    <div class="form-group col-md-6">
+                        <label for="inputTel" style="margin-right: 8px;">
+                            <img src="img/telefone.png" alt="Celular" style="width: 24px;">
+                        </label>
+                        <input type="text" class="form-control" id="inputTel">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput" style="margin-right: 8px;">
+                        <img src="img/o-email.png" alt="Email" style="width: 24px;"></label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Digite seu email">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2" style="margin-right: 8px;">
+                        <img src="img/trancar (1).png" alt="Senha" style="width: 24px;"></label>
+                    <input type="password" class="form-control" id="exampleInputPassword1"
+                        placeholder="Digite sua senha">
+                </div>
+
+                <div class="col-auto my-1 buttonSubmit">
+                    <button type="submit" class="btnCadastro ">Register</button>
+                </div>
+            </form>
+        </section>
+
+        <footer class="bg-body-tertiary text-center text-lg-start">
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: #22625f; color: white;">
+                © 2024 Copyright:
+                <a class="text-body" style="color: white !important;"
+                    href="https://mdbootstrap.com/">MDBootstrap.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+</html>

@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Signika:wght@300..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.card-body {
+    justify-content: center !important;
+    align-items: center !important;
+    display: flex !important;
+}
+
+.btn-knowMore {
+    background-color: #22625f;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+}
+
+.navbar {
+    background-color: #22625f;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 70px;
+}
+
+ul {
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+}
+
+ul li {
+    display: inline-block;
+    justify-content: center;
+    padding-top: 7.5px;
+    margin: 10px;
+}
+
+.nav-item {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav-item:hover {
+    background-color: white;
+    color: #22625f;
+    border-radius: 20px;
+}
+
+.navbar-brand img {
+    width: 40px;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.Contact {
+    display: flex;
+    align-items: center;
+}
+
+.Contact img {
+    background-color: #FFFFFF;
+    padding: 5px;
+    border-radius: 5px 0 0 5px;
+    margin-right: 0;
+    border-bottom-left-radius: 20px;
+    width: 28px;
+}
+
+.Contact span a {
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-left: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 5px 10px;
+    display: inline-block;
+    line-height: 1;
+    text-decoration: none;
+}
+
+.section-container {
+    width: 100%;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-container {
+    flex: 1;
+    /* A imagem ocupará 50% da largura do container */
+    max-width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+.content-container h1 h2 {
+    flex: 1;
+    /* O conteúdo ocupará os outros 50% da largura */
+    padding-left: 0;
+    text-align: center;
+}
+
+.line {
+    padding: 20px;
+    border-bottom: 1px solid #22625f;
+}
+
+.card {
+    width: 18rem;
+    margin: 15px;
+    padding: 0;
+    border-radius: 20px !important;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.card-img-top {
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important
+}
+
+.containerServices {
+    display: inline-flex;
+    margin: auto;
+}
+
+.ourServices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.image-container {
+    position: relative;
+}
+
+.btnBannerWelcome {
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    background-color: #f67c21;
+    border: none;
+    border-radius: 50px;
+    padding: 16px;
+    width: 420px;
+}
+
+.buttonSpan {
+    color: white;
+    text-decoration: none;
+}
+
+.saibaMais {
+    padding: 5px;
+    font-weight: 300;
+    color: white;
+    text-decoration: underline;
+}
+
+.saibaMais::after {
+    color: white;
+}
+
+
+.btn-overlay {
+    position: absolute;
+    /* Permite posicionar o elemento em qualquer lugar dentro de seu contêiner pai, usando propriedades como top, right, bottom, e left.*/
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFFFFF;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-overlay:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.AboutMe {
+    color: #22625f;
+    text-decoration: none;
+}
+
+.AboutMe:hover {
+    color: white;
+}
+
+.containerForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 50px;
+}
+
+.StayTouch {
+    padding-top: 30px;
+    padding-left: 15px;
+    color: #4e3a2a;
+}
+
+form {
+    width: 700px;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.headerForm {
+    text-align: center;
+}
+
+.Register {
+    font-size: 30px;
+}
+
+.form-group {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.form-control {
+    border-radius: 25px !important;
+    box-shadow: none !important;
+}
+
+.btnCadastro {
+    border: none;
+    border-radius: 30px;
+    background-color: #f67c21;
+    color: white;
+    padding: 13px;
+    margin-top: 20px;
+}
+
+.buttonSubmit {
+    justify-content: center;
+    display: flex;
+}
+
+.form-row {
+    display: flex;
+}
