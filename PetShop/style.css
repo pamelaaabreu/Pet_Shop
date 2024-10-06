@@ -156,14 +156,23 @@ ul li {
 
 .btnBannerWelcome {
     position: absolute;
-    top: 60%;
-    left: 10%;
-    background-color: #f67c21;
+    top: 65%; 
+    left: 15%;
+    background-color: #f67c21; 
     border: none;
-    border-radius: 50px;
-    padding: 16px;
+    border-radius: 150px;
+    padding: 20px;
     width: 420px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra padrão */
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; /* Adicionando transição de cor */
 }
+
+.btnBannerWelcome:hover {
+    transform: translateY(-3px); /* Move o botão para cima ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra mais pronunciada ao passar o mouse */
+    background-color: #e86a10; /* Nova cor ao passar o mouse */
+}
+
 
 .buttonSpan {
     color: white;
