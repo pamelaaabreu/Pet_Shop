@@ -154,7 +154,7 @@ $sql = "INSERT INTO usuario
             <form class="formIndex" id="Cadastro"  method="POST">
                 <div class="headerForm">
                     <span class="Register">Cadastro</span>
-                    <p>Já tem uma conta? <a class="facaLogin" href="Login.html">Faça login</a></p>
+                    <p>Já tem uma conta? <a class="facaLogin" href="Login.php">Faça login</a></p>
                 </div>
                 <div class="form-group">
                     <label for="formGroupExampleInput" style="margin-right: 8px;">

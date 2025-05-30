@@ -1,26 +1,20 @@
 <?php
-session_start();
-// Usuário e senha fixos para teste
-$emailCorreto = "usuario@teste.com";
-$senhaCorreta = "123456";
+include('conexao.php');
 
-// Captura os dados do formulário
-$email = $_POST['email'] ?? '';
-$senha = $_POST['senha'] ?? '';
+      if ($_SERVER['REQUEST_METHOD']==='POST'){ 
+  3 - PEGAR OS INPUT DOS FORMUÁRIO*/
+      $email = $_POST['email'];
+      $senha = $_POST['senha'];
 
-// Verifica se o email e senha batem com os valores fixos
-if ($email === $emailCorreto && $senha === $senhaCorreta) {
-    // Login OK - cria sessão
-    $_SESSION['usuario'] = $email;
-    // Redireciona para página protegida (pode ser sua página inicial)
-    header("Location: index.php");
-    exit();
-} else {
-    // Login falhou
-    $erro = "Email ou senha incorretos!";
-}
-?>
-
+       $sql = "SELECT * FROM usuario WHERE email='$email' && senha='$senha'";
+  
+       $resultado = mysqli_query($conn, $sql);
+        if (mysqli_num_rows($resultado)>0){ 
+        header("Refresh: 1; url=index.php");
+        }else{
+          header("Refresh: 1; url=Login.php");
+       }
+   } ?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
