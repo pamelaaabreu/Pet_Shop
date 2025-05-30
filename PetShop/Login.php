@@ -1,3 +1,27 @@
+<?php
+session_start();
+// Usuário e senha fixos para teste
+$emailCorreto = "usuario@teste.com";
+$senhaCorreta = "123456";
+
+// Captura os dados do formulário
+$email = $_POST['email'] ?? '';
+$senha = $_POST['senha'] ?? '';
+
+// Verifica se o email e senha batem com os valores fixos
+if ($email === $emailCorreto && $senha === $senhaCorreta) {
+    // Login OK - cria sessão
+    $_SESSION['usuario'] = $email;
+    // Redireciona para página protegida (pode ser sua página inicial)
+    header("Location: index.php");
+    exit();
+} else {
+    // Login falhou
+    $erro = "Email ou senha incorretos!";
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -30,15 +54,15 @@
     <h2>Bem-vindo de volta!</h2>
     <p>Entre na sua conta para continuar comprando para seus amigos peludos.</p>
 
-    <form class="form-petshop">
+    <form class="form-petshop" action="Login.php" method="POST">
       <label class="label-petshop" for="email">Endereço de Email</label>
-      <input class="input-petshop" type="email" id="email" placeholder="seu@email.com" required>
+      <input class="input-petshop" type="email" name="email" id="email" placeholder="seu@email.com" required>
 
       <label class="label-petshop" for="password">Senha</label>
-      <input class="input-petshop" type="password" id="password" placeholder="Digite sua senha" required>
+      <input class="input-petshop" type="password" name="senha" id="password" placeholder="Digite sua senha" required>
 
       <div class="options">
-        <label>
+        <label> 
           <input type="checkbox" id="remember">
           Lembre-se de mim
         </label>
