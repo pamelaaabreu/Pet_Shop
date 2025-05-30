@@ -379,7 +379,7 @@ ul li {
     height: 40px;
     padding: 0 10px;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 30px;
   }
   
   .options {
@@ -430,6 +430,12 @@ ul li {
 
   .facaLogin {
     color: #22625f;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .facaLogin:active {
+    color: #333;
     font-weight: bold;
     text-decoration: none;
   }
