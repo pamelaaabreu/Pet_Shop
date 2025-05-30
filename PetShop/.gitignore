@@ -1,0 +1,14 @@
+# Arquivo de configuração do banco de dados
+.env
+
+# Pastas do XAMPP ou temporárias (se tiver)
+vendor/
+node_modules/
+
+# Arquivos de cache
+*.log
+*.tmp
+
+# Sistema operacional
+.DS_Store
+Thumbs.db

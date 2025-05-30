@@ -1,20 +1,29 @@
 <?php
 include('conexao.php');
 
-      if ($_SERVER['REQUEST_METHOD']==='POST'){ 
+if ($_SERVER['REQUEST_METHOD'] === 'POST') { 
 
-      $email = $_POST['email'];
-      $senha = $_POST['senha'];
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
 
-       $sql = "SELECT * FROM usuario WHERE email='$email' && senha='$senha'";
-  
-       $resultado = mysqli_query($conn, $sql);
-        if (mysqli_num_rows($resultado)>0){ 
+    $sql = "SELECT * FROM usuario WHERE email='$email' AND senha='$senha'";
+    $resultado = mysqli_query($conn, $sql);
+
+    if (mysqli_num_rows($resultado) > 0) { 
+         echo "<script>
+                    alert('🎉 Login bem sucedido! Redirecionando...');
+                    window.location.href = 'index.php';
+                  </script>";
         header("Refresh: 1; url=index.php");
-        }else{
-          header("Refresh: 1; url=Login.php");
-       }
-   } ?>
+    } else {
+        echo "<script>
+                    alert('❌ Email ou senha incorretos. Redirecionando..." . mysqli_error($conn) . "');
+                    window.history.back();
+                  </script>";
+      header("Refresh: 2; url=Login.php");
+    }    
+}
+?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -40,14 +49,12 @@ include('conexao.php');
   <div class="brand">
     <div class="logo">🐾</div>
     <h1>Borcelle</h1>
-    <p>Sua loja confiável para seus pets</p>
+    <p class="mt-4">Seu pet shop confiável para seus pets</p>
   </div>
 
   <!-- Card de Login -->
   <div class="card-petshop">
     <h2>Bem-vindo de volta!</h2>
-    <p>Entre na sua conta para continuar comprando para seus amigos peludos.</p>
-
     <form class="form-petshop" action="Login.php" method="POST">
       <label class="label-petshop" for="email">Endereço de Email</label>
       <input class="input-petshop" type="email" name="email" id="email" placeholder="seu@email.com" required>

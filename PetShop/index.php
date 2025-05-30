@@ -1,9 +1,10 @@
 <?php
-    include('conexao.php');
-    
-if ($_SERVER["REQUEST_METHOD"]==="POST"){
+include('conexao.php');
 
-    $nome= $_POST['nome'];
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+
+    $nome = $_POST['nome'];
+    $telefone = $_POST['telefone'];
     $endereco = $_POST['endereco'];
     $cidade = $_POST['cidade'];
     $estado = $_POST['estado'];
@@ -11,20 +12,37 @@ if ($_SERVER["REQUEST_METHOD"]==="POST"){
     $data_nascimento = $_POST['data_nascimento'];
     $email = $_POST['email'];
     $senha = $_POST['senha'];
-    $telefone = $_POST['telefone'];
-    
-$sql = "INSERT INTO usuario
- (nome, endereco, cidade, estado, cep, data_nascimento, email,
- senha, telefone)
-        VALUES ('$nome', '$endereco', '$cidade',
-        '$estado', '$cep', '$data_nascimento', 
-        '$email', '$senha', '$telefone')";
 
-        if (mysqli_query($conn, $sql)){
-            echo"Usuário cadastrado com sucesso!";
+    // Verifica se o email já está cadastrado
+    $verifica_sql = "SELECT * FROM usuario WHERE email = '$email'";
+    $verifica_resultado = mysqli_query($conn, $verifica_sql);
+
+    if (mysqli_num_rows($verifica_resultado) > 0) {
+        echo "<script>
+                alert('⚠️ Este email já está cadastrado. Tente outro!');
+                window.history.back();
+              </script>";
+    } else {
+        // Faz o cadastro se não existir
+        $sql = "INSERT INTO usuario 
+                (nome, telefone, endereco, cidade, estado, cep, data_nascimento, email, senha)
+                VALUES ('$nome', '$telefone', '$endereco', '$cidade', '$estado', '$cep', '$data_nascimento', '$email', '$senha')";
+
+        if (mysqli_query($conn, $sql)) {
+            echo "<script>
+                    alert('🎉 Usuário cadastrado com sucesso!');
+                    window.location.href = 'Login.php';
+                  </script>";
+        } else {
+            echo "<script>
+                    alert('❌ Erro ao cadastrar usuário: " . mysqli_error($conn) . "');
+                    window.history.back();
+                  </script>";
         }
     }
-    ?>
+}
+?>
+
 
 <!DOCTYPE html>
 <html lang="pt-br">
