@@ -250,12 +250,13 @@ ul li {
     font-style: normal;
   }
 
-form {
-    width: 700px;
+.formIndex {
+    width: 100vh;
     padding: 25px;
     border-radius: 25px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
+
 
 .headerForm {
     text-align: center;
@@ -293,3 +294,142 @@ form {
 .form-row {
     display: flex;
 }
+
+.background {
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #fff7ed, #fff3c4, #ffeb99);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .container-petshop {
+    max-width: 700px;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+  }
+  
+  .decor .icon {
+    position: absolute;
+    font-size: 40px;
+    opacity: 0.2;
+    pointer-events: none;
+  }
+  
+  .brand .logo {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(to bottom right, #fb923c, #f59e0b);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .brand h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .brand p {
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .card-petshop {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  }
+  
+  .card-petshop h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .card-petshop p {
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .form-petshop {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .label-petshop {
+    text-align: left;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .input-petshop[type="email"], input[type="password"] {
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  
+  .options a {
+    color: #ea580c;
+    text-decoration: none;
+  }
+  
+  .button-petshop {
+    background: linear-gradient(to right, #f97316, #f59e0b);
+    color: white;
+    border: none;
+    height: 45px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .button-petshop:hover {
+    background: linear-gradient(to right, #ea580c, #d97706);
+  }
+  
+  .signup {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  .signup a {
+    color: #ea580c;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #777;
+  }
+  
+
+  .facaLogin {
+    color: #22625f;
+    font-weight: bold;
+    text-decoration: none;
+  }

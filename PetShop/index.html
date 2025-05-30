@@ -123,7 +123,7 @@
         </div>
 
         <section class="containerForm">
-            <form action="">
+            <form class="formIndex" id="Cadastro">
                 <div class="headerForm">
                     <span class="Register">Cadastro</span>
                     <p>Já tem uma conta? <a href="Login.html">Faça login</a></p>
@@ -131,27 +131,54 @@
                 <div class="form-group">
                     <label for="formGroupExampleInput" style="margin-right: 8px;">
                         <img src="img/pessoa.png" alt="Pessoa" style="width: 24px;"></label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Digite seu nome">
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ex: Maria Da Silva">
                 </div>
                 <div class="form-group">
                     <label for="inputAddress" style="margin-right: 8px;">
                         <img src="img/localização.png" alt="Endereço" style="width: 24px;"></label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Ex: Rua Americanas">
                 </div>
                 <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="inputCity" style="margin-right: 8px;">City</label>
-                        <input type="text" class="form-control" id="inputCity">
+                    <div class="form-group col-md-4">
+                        <label for="inputCity" style="margin-right: 8px;">Cidade</label>
+                        <input type="text" class="form-control" id="inputCity"  placeholder="Ex: São Paulo">
                     </div>
                     <div class="form-group col-md-4">
-                        <label for="inputState" style="margin-right: 8px;">State</label>
+                        <label for="inputState" style="margin-right: 8px;">Estado</label>
                         <select id="inputState" class="form-control">
-                            <option selected>Choose...</option>
-                            <option>...</option>
+                    <option selected></option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                    <option value="EX">Estrangeiro</option>
                         </select>
                     </div>
-                    <div class="form-group col-md-2">
-                        <label for="inputZip" style="margin-right: 8px;">Zip</label>
+                    <div class="form-group col-md-4">
+                        <label for="inputZip" style="margin-right: 8px;">CEP</label>
                         <input type="text" class="form-control" id="inputZip">
                     </div>
                 </div>
@@ -162,7 +189,7 @@
 
                     <div class="form-group col-md-6">
                         <label for="inputTel" style="margin-right: 8px;">
-                            <img src="img/telefone.png" alt="Celular" style="width: 24px;">
+                            <img src="img/telefone.png" alt="Celular" style="width: 24px;" placeholder="(XX)XXXX-XXXX">
                         </label>
                         <input type="text" class="form-control" id="inputTel">
                     </div>
@@ -170,7 +197,7 @@
                 <div class="form-group">
                     <label for="formGroupExampleInput" style="margin-right: 8px;">
                         <img src="img/email.png" alt="Email" style="width: 24px;"></label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Digite seu email">
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="teste@teste.com.br">
                 </div>
                 <div class="form-group">
                     <label for="formGroupExampleInput2" style="margin-right: 8px;">
