@@ -1,7 +1,7 @@
 Borcelle - Pet Shop
 Projeto de página inicial com cadastro e login de usuários, desenvolvido com HTML, CSS, PHP, MySQL e Bootstrap.
 
-Página Home responsiva com apresentação dos serviços.
+Página Home com apresentação dos serviços.
 
 ✅ Formulário de cadastro de clientes, com verificação de email duplicado.
 
